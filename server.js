@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 app.post("/", (req, res) => {
-  return res.json({ message: "Hello World!", data: req?.body });
+  return res.json({ message: "Hello World!", data: req.body });
 });
 
 app.listen(1300, () => console.log(`Server running on port: 1300`));
